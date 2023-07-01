@@ -1,0 +1,39 @@
+<h2>Branches</h2>
+<ul>
+    <li *ngFor="let branch of branches">
+      <a [routerLink]="['/branches', branch.id]">{{ branch.name }}</a>
+    </li>
+  </ul>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Building Number</th>
+      <th>Street</th>
+      <th>Area</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Manager</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let branch of branches">
+      <td>{{ branch.name }}</td>
+      <td>{{ branch.building_number }}</td>
+      <td>{{ branch.street }}</td>
+      <td>{{ branch.area }}</td>
+      <td>{{ branch.city }}</td>
+      <td>{{ branch.country }}</td>
+      <td>{{ branch.manager }}</td>
+      <td>
+        <button (click)="deleteBranch(branch)">Delete</button>
+        <a routerLink="/branches/{{ branch.id }}">Edit</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<a routerLink="/branches/new">New Branch</a>

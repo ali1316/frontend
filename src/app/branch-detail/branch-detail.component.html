@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="branch-detail.component.css"><h2>Branch Details</h2>
+
+<div *ngIf="branch">
+  <div>
+    <strong>Name:</strong> {{ branch.name }}
+  </div>
+  <div>
+    <strong>Building Number:</strong> {{ branch.building_number }}
+  </div>
+  <div>
+    <strong>Street:</strong> {{ branch.street }}
+  </div>
+  <div>
+    <strong>Area:</strong> {{ branch.area }}
+  </div>
+  <div>
+    <strong>City:</strong> {{ branch.city }}
+  </div>
+  <div>
+    <strong>Country:</strong> {{ branch.country }}
+  </div>
+  <br>
+  <div>
+    <strong>Manager:</strong>
+    <select [(ngModel)]="branch.manager">
+      <option *ngFor="let employee of employees" [value]="employee">{{ employee.name }}</option>
+    </select>
+  </div>
+  <br>
+  <button (click)="save()">Save</button>
+  <button (click)="goBack()">Cancel</button>
+</div>

@@ -1,0 +1,88 @@
+/* branch-detail.component.css */
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .detail-row label {
+    width: 150px;
+    font-weight: bold;
+  }
+  
+  .detail-row span {
+    flex: 1;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .edit-button,
+  .delete-button {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover,
+  .delete-button:hover {
+    background-color: #ccc;
+  }
+  
+  .form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .form-row label {
+    width: 150px;
+    font-weight: bold;
+  }
+  
+  .form-row input,
+  .form-row select {
+    flex: 1;
+  }
+  
+  .save-button,
+  .cancel-button {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .save-button:hover,
+  .cancel-button:hover {
+    background-color: #ccc;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }

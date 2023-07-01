@@ -1,0 +1,166 @@
+/* styles.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .button-group {
+    display: flex;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  /* styles.css */
+
+/* Set background color for the Branches heading */
+h2 {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Style the links in the BranchListComponent */
+  ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect for the links in the BranchListComponent */
+  ul li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style the buttons in the BranchListComponent */
+  table button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect for the buttons in the BranchListComponent */
+  table button:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Style the New Branch link */
+  a.router-link {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect for the New Branch link */
+  a.router-link:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  /* styles.css */
+
+h2 {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  thead {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  th:first-child, td:first-child {
+    border-left: none;
+  }
+  
+  th:last-child, td:last-child {
+    border-right: none;
+  }
+  
+  tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  a.router-link {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a.router-link:hover {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }

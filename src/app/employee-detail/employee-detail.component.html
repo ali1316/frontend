@@ -1,0 +1,26 @@
+<h2>Employee Details</h2>
+
+<div *ngIf="employee">
+  <div>
+    <strong>Name:</strong> {{ employee.name }}
+  </div>
+  <div>
+    <strong>Age:</strong> {{ employee.age }}
+  </div>
+  <div>
+    <strong>Email:</strong> {{ employee.email }}
+  </div>
+  <div>
+    <strong>Phone Number:</strong> {{ employee.phone_number }}
+  </div>
+  <br>
+  <div>
+    <strong>Branch:</strong>
+    <select [(ngModel)]="employee.branch">
+      <option *ngFor="let branch of branches" [value]="branch">{{ branch.name }}</option>
+    </select>
+  </div>
+  <br>
+  <button (click)="save()">Save</button>
+  <button (click)="goBack()">Cancel</button>
+</div>
